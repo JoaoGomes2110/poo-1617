@@ -1,4 +1,4 @@
-
+import java.util.GregorianCalendar;
 /**
  * Escreva a descrição da classe Ator aqui.
  * 
@@ -11,7 +11,7 @@ public class Ator
    private String nome;
    private String pass;
    private String morada;
-   private String dataNasc;
+   private GregorianCalendar dataNasc;
    
    // Construtores
    public Ator() {
@@ -19,10 +19,10 @@ public class Ator
      this.nome = "";
      this.pass = "";
      this.morada = "";
-     this.dataNasc = "";
+     this.dataNasc = new GregorianCalendar();
    } 
    
-   public Ator(String email, String nome, String pass, String morada, String dataNasc) {
+   public Ator(String email, String nome, String pass, String morada, GregorianCalendar dataNasc) {
      this.email = email;
      this.nome = nome;
      this.pass = pass;
@@ -54,21 +54,43 @@ public class Ator
        return this.morada;
     } 
     
-   public String getDataNasc(){
+   public GregorianCalendar getDataNasc(){
        return this.dataNasc;
     }  
     
    public String toString(){
        StringBuilder s = new StringBuilder();
-       s.append("Nome");
+       s.append("Email: ");
+       s.append(this.email);
+       s.append("\n");
+       s.append("Nome: ");
        s.append(this.nome);
-       
+       s.append("\n");
+       s.append("Pass: ");
+       s.append(this.pass);
+       s.append("\n");
+       s.append("Morada");
+       s.append(this.morada);
+       s.append("\n");
+       s.append("Data de Nascimento: ");
+       s.append(this.dataNasc);
+       s.append("\n");
        return s.toString();
     }
     
    public  Ator clone(){
      return new Ator(this);  
     }
+    
+   public boolean equals(Object o){
+       if(o == this)
+        return true;
+       if(o == null || o.getClass() != this.getClass())
+        return false;
+       Ator a = (Ator)o;
+       return (a.getEmail().equals(this.email) && a.getNome().equals(this.nome) && a.getPass().equals(this.pass) && a.getMorada().equals(this.morada) && a.getDataNasc().equals(this.dataNasc));
+   }
+    
     
    
     

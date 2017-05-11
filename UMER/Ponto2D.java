@@ -27,4 +27,21 @@ public class Ponto2D
     public int getX() { return this.x; }
     public int getY() { return this.y; }
     
+    
+    public Ponto2D clone(){
+        return new Ponto2D(this);
+    }
+    
+    public boolean equals(Object o){
+        if(o == this)
+            return true;
+        if(o == null || o.getClass() != this.getClass())
+            return false;
+        Ponto2D p = (Ponto2D)o;
+        return (p.getX() == this.x && p.getY() == this.y);
+    }
+    
+    public String toString(){
+        return ("x = " + this.x + " y = " + this.y);
+    }
 }

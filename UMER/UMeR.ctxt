@@ -1,2 +1,16 @@
 #BlueJ class context
-numComments=0
+comment0.target=UMeR
+comment0.text=\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ UMeR\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\n
+comment1.params=
+comment1.target=UMeR()
+comment2.params=
+comment2.target=UMeR\ initApp()
+comment3.params=email\ pass\ a
+comment3.target=void\ iniciaSessao(java.lang.String,\ java.lang.String,\ int)
+comment3.text=\n\ variavel\ 'a'\ ->\ 1\ \=\ cliente\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ->\ 2\ \=\ motorista\ \n
+comment4.params=
+comment4.target=boolean\ sessaoIniciada()
+comment5.params=a
+comment5.target=void\ registarAtor(Ator)
+comment5.text=\n\ nao\ podem\ ter\ o\ mesmo\ email\ mesmo\ que\ sejam\ atores\ diferentes\n
+numComments=6
