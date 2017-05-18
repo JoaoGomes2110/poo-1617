@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=UMeR()
+comment1.params=
+comment1.target=UMeR\ initApp()
+comment2.params=email\ pass\ a
+comment2.target=void\ iniciaSessao(java.lang.String,\ java.lang.String,\ int)
+comment2.text=\r\n\ variavel\ 'a'\ ->\ 1\ \=\ cliente\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ->\ 2\ \=\ motorista\ \r\n
+comment3.params=
+comment3.target=boolean\ sessaoIniciada()
+comment4.params=a
+comment4.target=void\ registarAtor(Ator)
+comment4.text=\r\n\ nao\ podem\ ter\ o\ mesmo\ email\ mesmo\ que\ sejam\ atores\ diferentes\r\n
+numComments=5

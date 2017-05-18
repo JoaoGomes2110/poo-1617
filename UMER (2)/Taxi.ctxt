@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Taxi()
+comment1.params=ve\ p\ f\ c\ historico
+comment1.target=Taxi(double,\ double,\ double,\ Ponto2D,\ java.util.List)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=t
+comment2.target=Taxi(Taxi)
+comment3.params=
+comment3.target=double\ getVelocidade()
+comment4.params=
+comment4.target=double\ getPreco()
+comment5.params=
+comment5.target=double\ getFiabilidade()
+comment6.params=
+comment6.target=Ponto2D\ getCoordenadas()
+comment7.params=
+comment7.target=java.util.List\ getHistorico()
+comment8.params=
+comment8.target=Taxi\ clone()
+comment9.params=o
+comment9.target=boolean\ equals(java.lang.Object)
+numComments=11
