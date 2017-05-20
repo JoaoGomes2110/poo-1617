@@ -1,30 +1,37 @@
+import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Taxi {
+public class Taxi implements Serializable{
     
+    private int idTaxi;
     private double velocidade;
     private double preco;
     private double fiabilidade;
     private Ponto2D coordenadas;
+    private Motorista motorista;
     private List<Viagem> historico;
     
     public Taxi() {
         
+        this.idTaxi      = 0;  
         this.velocidade  = 0;
         this.preco       = 0;
         this.fiabilidade = 0;
         this.coordenadas = new Ponto2D();
+        this.motorista = new Motorista();
         this.historico   = new ArrayList<Viagem>();
         
     }
     
-    public Taxi(double ve, double p, double f, Ponto2D c, List<Viagem> historico) {
+    public Taxi(int id,double ve, double p, double f, Ponto2D c,Motorista m, List<Viagem> historico) {
         
+        this.idTaxi      = id;
         this.velocidade  = ve;
         this.preco       = p;
         this.fiabilidade = f;
         this.coordenadas = c;
+        this.motorista   = new Motorista(m);
         for(Viagem v: historico)
             this.historico.add(v.clone());
             
@@ -32,11 +39,19 @@ public class Taxi {
     
     public Taxi(Taxi t) {
         
+        this.idTaxi      = t.getIdTaxi();
         this.velocidade  = t.getVelocidade();
         this.preco       = t.getPreco();
         this.fiabilidade = t.getFiabilidade();
         this.coordenadas = t.getCoordenadas();
+        this.motorista   = t.getMotorista();
         this.historico   = t.getHistorico();
+        
+    }
+    
+    public int getIdTaxi(){
+        
+        return this.idTaxi;
         
     }
     
@@ -64,6 +79,12 @@ public class Taxi {
         
     }
     
+    public Motorista getMotorista(){
+        
+        return this.motorista; 
+    
+    }
+    
     public List<Viagem> getHistorico() {
         
         ArrayList<Viagem> aux = new ArrayList<Viagem>(this.historico.size());
@@ -84,7 +105,7 @@ public class Taxi {
         if(o == null || o.getClass() != this.getClass())
             return false;
         Taxi t = (Taxi)o;
-        return (t.getVelocidade() == this.velocidade && t.getPreco() == this.preco && t.getFiabilidade() == this.fiabilidade && t.getCoordenadas().equals(this.coordenadas) && t.getHistorico().equals(this.historico));
+        return (t.getVelocidade() == this.velocidade && t.getPreco() == this.preco && t.getFiabilidade() == this.fiabilidade && t.getCoordenadas().equals(this.coordenadas) && t.getMotorista().equals(this.motorista) && t.getHistorico().equals(this.historico));
     }
     
     public String toString(){
@@ -100,6 +121,9 @@ public class Taxi {
         sb.append("\n");
         sb.append("Coordenadas: ");
         sb.append(this.coordenadas.toString());
+        sb.append("\n");
+        sb.append("Motorista: ");
+        sb.append(this.motorista.toString());
         sb.append("\n");
         sb.append("Historico ");
         sb.append(this.historico.toString());

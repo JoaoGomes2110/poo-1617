@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Moto
+comment0.text=\n\ Write\ a\ description\ of\ class\ Motos\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Moto()
+comment2.params=id\ ve\ p\ f\ c\ m\ historico
+comment2.target=Moto(int,\ double,\ double,\ double,\ Ponto2D,\ Motorista,\ java.util.List)
+comment3.params=m
+comment3.target=Moto(Moto)
+numComments=4

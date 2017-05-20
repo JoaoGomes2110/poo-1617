@@ -1,6 +1,7 @@
 import java.util.Map;
 import java.util.HashMap;
-
+import java.util.List;
+import java.util.ArrayList;
 /**
  * Escreva a descriçao da classe UMeR aqui.
  * 
@@ -13,13 +14,14 @@ public class UMeR {
     private Ator sessao;
     private HashMap<String,Cliente>   clientes;
     private HashMap<String,Motorista> motoristas;
-   
+    private HashMap<Integer,Taxi> taxis;
+    
     public UMeR() {
        
         sessao          = null;
         this.clientes   = new HashMap<>();
-        this.motoristas = new HashMap<>();
-       
+        this.motoristas = new HashMap<>();       
+        this.taxis      = new HashMap<>();
     }
    
     public static UMeR initApp() {
@@ -81,6 +83,22 @@ public class UMeR {
         }
         System.out.println("\nRegistado com Sucesso!");
         
+    }
+    
+    public HashMap<Integer,Motorista> getDisponiveis(){
+        HashMap<Integer,Motorista> disponiveis = new HashMap<>();
+        for(Taxi t: taxis.values()){
+            Motorista m = t.getMotorista();
+            if(m.getDisponibilidade() == true){
+                disponiveis.put(t.getIdTaxi(),m);
+            }
+        }
+        return disponiveis;
+    }
+    
+    public void setDisponiveis(Taxi t){
+        Motorista m = t.getMotorista();
+        m.setDisponibilidade(true);
     }
     /*
         public String toString() {

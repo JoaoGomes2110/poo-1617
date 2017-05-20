@@ -95,7 +95,33 @@ public class Motorista extends Ator {
         
     }
     
-        public Motorista clone(){
+    public void setFator(int fator){
+    
+        this.fator = fator;
+        
+    }
+    
+    public void setClassificacao(int classificacao){
+    
+        this.classificacao = classificacao;
+        
+    }
+    
+    public void setKms(double KmsTotal){
+        
+        this.KmsTotal = KmsTotal;
+        
+    }
+    
+    public void setDisponibilidade(boolean disponibilidade){
+       
+        this.disponibilidade = disponibilidade;
+        
+    }
+    
+    // Falta o set de Historico
+    
+    public Motorista clone(){
         return new Motorista(this);
     }
     
