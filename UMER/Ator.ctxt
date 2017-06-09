@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Ator
+comment0.text=\n\ Escreva\ a\ descricao\ da\ classe\ Ator\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (numero\ de\ versao\ ou\ data)\n
+comment1.params=
+comment1.target=Ator()
+comment10.params=o
+comment10.target=boolean\ equals(java.lang.Object)
+comment11.params=
+comment11.target=Ator\ clone()
+comment2.params=email\ nome\ pass\ morada\ dataNasc
+comment2.target=Ator(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.GregorianCalendar)
+comment3.params=a
+comment3.target=Ator(Ator)
+comment4.params=
+comment4.target=java.lang.String\ getEmail()
+comment5.params=
+comment5.target=java.lang.String\ getNome()
+comment6.params=
+comment6.target=java.lang.String\ getPass()
+comment7.params=
+comment7.target=java.lang.String\ getMorada()
+comment8.params=
+comment8.target=java.util.GregorianCalendar\ getDataNasc()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=12

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=UMeRApp
+comment0.text=\n\ Escreva\ a\ descricao\ da\ classe\ UMeR\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (numero\ de\ versao\ ou\ data)\n
+comment1.params=
+comment1.target=UMeRApp()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=
+comment3.target=void\ carregarMenus()
+comment4.params=a
+comment4.target=java.lang.String\ login(int)
+comment5.params=
+comment5.target=void\ registo()
+comment6.params=email
+comment6.target=void\ menuCliente(java.lang.String)
+comment7.params=email
+comment7.target=void\ menuMotorista(java.lang.String)
+comment8.params=
+comment8.target=void\ menuEstatisticas()
+numComments=9
